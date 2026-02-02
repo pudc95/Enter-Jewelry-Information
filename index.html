@@ -41,6 +41,16 @@
       <label for="product-image">Upload Image</label>
       <input type="file" id="product-image" name="product-image" accept="image/*" required>
 
+      <!-- 标签输入框 -->
+      <label for="product-tags">Tags</label>
+      <div id="tags-container">
+        <div class="tag-input-container">
+          <input type="text" name="tag[]" class="tag-input" placeholder="Enter tag">
+          <button type="button" class="remove-tag-btn" onclick="removeTagInput(this)">Delete</button>
+        </div>
+      </div>
+      <button type="button" class="add-tag-btn" onclick="addTagInput()">Add Tag</button>
+
       <button type="submit" class="submit-btn">Submit Product</button>
     </form>
   </main>
@@ -48,6 +58,8 @@
   <footer>
     <p>&copy; 2026 Jewelry Baby. All Rights Reserved.</p>
   </footer>
+
+  <script src="scripts.js"></script>
 
 </body>
 </html>
