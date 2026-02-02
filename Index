@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Baby - Add Product</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 顶部导航栏 -->
+  <header>
+    <nav>
+      <div class="logo">Jewelry Baby</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Add Product</a></li>
+        <li><a href="#">View Products</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 商品信息输入表单 -->
+  <main class="form-container">
+    <h1>Enter New Product</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <label for="product-name">Product Name</label>
+      <input type="text" id="product-name" name="product-name" required>
+
+      <label for="product-description">Description</label>
+      <textarea id="product-description" name="product-description" rows="5" required></textarea>
+
+      <label for="product-price">Price ($)</label>
+      <input type="number" id="product-price" name="product-price" required>
+
+      <label for="product-category">Category</label>
+      <select id="product-category" name="product-category" required>
+        <option value="necklace">Necklace</option>
+        <option value="earring">Earring</option>
+        <option value="bracelet">Bracelet</option>
+      </select>
+
+      <label for="product-image">Upload Image</label>
+      <input type="file" id="product-image" name="product-image" accept="image/*" required>
+
+      <button type="submit" class="submit-btn">Submit Product</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jewelry Baby. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
